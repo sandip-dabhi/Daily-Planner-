@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container" id="planner">
+        <h1>Daily Planner</h1>
+        
+        <div class="header">
+            <div class="date-picker">
+                <input type="date" id="date-input">
+                <button id="today-btn">Today</button>
+            </div>
+            <div class="actions">
+                <button id="theme-toggle">Dark Mode</button>
+                <button id="download-btn">Download PDF</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">To-Do List</h2>
+            <ul class="todo-list" id="todo-list">
+            </ul>
+            <div class="add-todo">
+                <input type="text" id="new-todo" placeholder="Add a new task...">
+                <button id="add-todo-btn">Add</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Schedule</h2>
+            <div class="schedule" id="schedule">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Notes</h2>
+            <textarea class="notes" id="notes" placeholder="Write your notes here..."></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
